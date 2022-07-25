@@ -12,6 +12,8 @@ public class VetoresUnidimensionais {
         notas[5] = 7;
         notas[6] = 8;
 
+         /*notas[11] = 10; - ArrayIndexOutOfBoundsException */
+
         String[] carros = new String[]{"BMW i320", "Mercedes c180", "BMW M3", "Mercedes AMG", "Tesla Model S"};
 
         System.out.println(carros.length);
