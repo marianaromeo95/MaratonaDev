@@ -14,7 +14,28 @@ public class Principal {
 
         BMW bmw2 = new BMW();
 
-        System.out.println(bmw2.calcularTaxaAceleracao(100.5, 10.5));
+        Tesla tesla = new Tesla();
+        System.out.println(tesla.isDirigeSozinho());
+
+        Carro teslaDois = new Tesla();  // Armazendando o Tesla na classe pai; acesso apenas a atributos que sao herdados
+
+        ((Tesla) teslaDois).setDirigeSozinho(true); // CASTING, Transformei o Carro para um tipo especifico TELSA
+        System.out.println(((Tesla) teslaDois).isDirigeSozinho());
+
+        Carro[] carros = new Carro[] {bmw, bmw2, tesla, teslaDois};
+
+        for (Carro carro: carros) {
+            if (carro instanceof Tesla) { // checando se ele é uma instância de Tesla
+                System.out.println(((Tesla) teslaDois).isDirigeSozinho());
+            }
+        }
+
+        bmw2.calcularTaxaAceleracao(100.50, 10);
+        tesla.calcularTaxaAceleracao(100.50, 10);
+
+
+
+        /*System.out.println(bmw2.calcularTaxaAceleracao(100.5, 10.5));
 
 
 
@@ -35,7 +56,7 @@ public class Principal {
 
         System.out.println(bmw.calcularTaxaAceleracao(bmw.getVelocidadeMaxima(), 0, 10, 0));
         System.out.println(bmw.calcularTaxaAceleracao(bmw.getVelocidadeMaxima(), 5));
-        System.out.println(bmw.calcularTaxaAceleracao(100, 5));
+        System.out.println(bmw.calcularTaxaAceleracao(100, 5));*/
 
     }
 }
