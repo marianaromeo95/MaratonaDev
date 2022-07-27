@@ -5,17 +5,28 @@ public class Principal {
     public static void main(String[] args) {
         Carro bmw = new Carro(); // invoca o construtor Carro da classe Carro
 
-        bmw.setMarca("BMW");
+    /*    bmw.setMarca("BMW");
         bmw.setModelo("M3");
         bmw.setQuilometrosPorLitro(7.5);
-        bmw.setVelocidadeMaxima(280);
+        bmw.setVelocidadeMaxima(280);*/
 
         Carro mercedes = new Carro("Mercedes", "c180"); // Como se fosse um set <<<<
 
         BMW bmw2 = new BMW();
-
         Tesla tesla = new Tesla();
         System.out.println(tesla.isDirigeSozinho());
+
+        try {
+            bmw2.setVelocidadeMaxima(-10);
+        } catch(NegocioException e) {
+            System.out.println(e);
+        } finally {
+            System.out.println("passou aqui");
+        }
+
+
+
+
 
         Carro teslaDois = new Tesla();  // Armazendando o Tesla na classe pai; acesso apenas a atributos que sao herdados
 
