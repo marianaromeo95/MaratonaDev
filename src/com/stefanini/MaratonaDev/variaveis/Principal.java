@@ -1,6 +1,6 @@
 package com.stefanini.MaratonaDev.variaveis;
 
-import com.stefanini.MaratonaDev.aula09.Carro;
+import com.stefanini.MaratonaDev.orientacaoaobjeto.Carro;
 
 public class Principal {
 

@@ -1,6 +1,6 @@
-package com.stefanini.MaratonaDev.aula09;
+package com.stefanini.MaratonaDev.orientacaoaobjeto;
 
-public class Carro {
+public  class Carro {
 
     // Atributos
 
@@ -68,7 +68,7 @@ public class Carro {
 
     public void setVelocidadeMaxima(int velocidadeMaxima) throws NegocioException {
         if (velocidadeMaxima < 0) {
-           throw new NegocioException("Valor é inválido");
+            throw new NegocioException("Valor é inválido");
         } else {
             this.velocidadeMaxima = velocidadeMaxima;
         }

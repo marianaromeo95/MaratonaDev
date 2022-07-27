@@ -1,4 +1,6 @@
-package com.stefanini.MaratonaDev.aula09;
+package com.stefanini.MaratonaDev.entidades;
+
+import com.stefanini.MaratonaDev.orientacaoaobjeto.Carro;
 
 public class Tesla extends Carro {
 

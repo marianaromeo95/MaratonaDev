@@ -1,4 +1,4 @@
-package com.stefanini.MaratonaDev.aula09;
+package com.stefanini.MaratonaDev.orientacaoaobjeto;
 
 public class NegocioException extends Exception {
 
