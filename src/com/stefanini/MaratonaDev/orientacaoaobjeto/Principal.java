@@ -13,18 +13,20 @@ public class Principal {
         print();
 
 
-        Carro bmw = new Carro(); // invoca o construtor Carro da classe Carro
+     //   Carro bmw = new Carro(); // invoca o construtor Carro da classe Carro
 
     /*    bmw.setMarca("BMW");
         bmw.setModelo("M3");
         bmw.setQuilometrosPorLitro(7.5);
         bmw.setVelocidadeMaxima(280);*/
 
-        Carro mercedes = new Carro("Mercedes", "c180"); // Como se fosse um set <<<<
+       // Carro mercedes = new Carro("Mercedes", "c180"); // Como se fosse um set <<<<
 
         BMW bmw2 = new BMW();
         Tesla tesla = new Tesla();
         System.out.println(tesla.isDirigeSozinho());
+
+        bmw2.piscarAlerta();
 
         try {
             bmw2.setVelocidadeMaxima(-10);
@@ -40,9 +42,11 @@ public class Principal {
         ((Tesla) teslaDois).setDirigeSozinho(true); // CASTING, Transformei o Carro para um tipo especifico TELSA
         System.out.println(((Tesla) teslaDois).isDirigeSozinho());
 
-        Carro[] carros = new Carro[]{bmw, bmw2, tesla, teslaDois};
+        teslaDois.piscarAlerta();
 
-        for (Carro carro : carros) {
+       // Carro[] carros = new Carro[]{bmw, bmw2, tesla, teslaDois};
+
+      /*  for (Carro carro : carros) {
             if (Constantes.MARCA_FAMOSA.equals(carro.getMarca())) {
                 System.out.println("Carro de marca famosa");
             }

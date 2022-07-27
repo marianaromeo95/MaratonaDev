@@ -10,10 +10,17 @@ public class Tesla extends Carro {
         super();
     }
 
+
+
     @Override       // Sobreesctrita de um metodo
     public double calcularTaxaAceleracao(double velocidadeFinal, double tempoFinal) {
         System.out.println("Tesla sobreescrita");
         return velocidadeFinal * tempoFinal;
+    }
+
+    @Override
+    public void piscarAlerta() {
+        System.out.println("Tesla piscando alerta...");
     }
 
     public boolean isDirigeSozinho() {

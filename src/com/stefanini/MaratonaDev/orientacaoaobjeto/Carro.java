@@ -1,6 +1,6 @@
 package com.stefanini.MaratonaDev.orientacaoaobjeto;
 
-public  class Carro {
+public abstract class Carro {
 
     // Atributos
 
@@ -32,6 +32,8 @@ public  class Carro {
     public void frear() {
         System.out.println("Freando...");
     }
+
+    public abstract void piscarAlerta();
 
     public double calcularTaxaAceleracao(double velocidadeFinal, double velocidadeInicial, double tempoFinal, double tempoInicial) {
         return (velocidadeFinal - velocidadeInicial) / (tempoFinal - tempoInicial) * 3.6;
